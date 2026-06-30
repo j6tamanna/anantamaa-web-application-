@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  /* Royal Elementor Addons Cosmetic V1 - Soft Luxury Aesthetic Palette */
+  --color-brand-blush: #FAF0EC;
+  --color-brand-rose: #EAD2CB;
+  --color-brand-dusty: #C69284;
+  --color-brand-gold: #C69284; /* Synced with brand-dusty for systemic consistency */
+  --color-brand-gold-light: #FAF0EC;
+  --color-brand-taupe: #8A7A71;
+  --color-brand-cream: #F9F5F0;
+  --color-brand-ivory: #FAF6F0;
+  --color-brand-charcoal: #2A2725;
+  --color-brand-sand: #F3EAE3;
+
+  /* Luxury Apparel Color Palette */
+  --color-brand-teal: #1E5D5D;
+  --color-brand-navy: #11223F;
+  --color-brand-dustypink: #D7A99C;
+  --color-brand-orchid: #AF7D94;
+  --color-brand-beige: #D9CBB6;
+  --color-brand-midnight: #0A1128;
+  --color-brand-niagara: #7A96A2;
+  --color-brand-roseelegance: #C58F82;
+  --color-brand-sage: #A3B19B;
+  --color-brand-turf: #2D5D4E;
+  --color-brand-laurel: #75806F;
+}
+
+/* Custom theme helper classes for Cosmetic V1 Style */
+.glass-panel {
+  background: rgba(249, 245, 240, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(198, 146, 132, 0.15);
+}
+
+.bg-gradient-frosted {
+  background: radial-gradient(circle at 80% 20%, #FAF0EC 0%, transparent 50%), radial-gradient(circle at 20% 80%, #EAD2CB 0%, transparent 50%);
+  background-color: #F9F5F0;
+}
+
+/* Organic curved outlines or soft asymmetric borders from Cosmetic V1 */
+.rounded-luxury {
+  border-radius: 32px 32px 4px 32px;
+}
+
+.card-shadow-luxury {
+  box-shadow: 0 12px 32px rgba(138, 122, 113, 0.08);
+}
+
+/* Cosmetic V1 refined thin borders */
+.cosmetic-border {
+  border: 1px solid rgba(198, 146, 132, 0.2);
+}
+
+.cosmetic-border-double {
+  border: 4px double rgba(198, 146, 132, 0.25);
+}
+
+/* Elegant line transition under links/buttons like Royal Addons */
+.cosmetic-underline {
+  position: relative;
+}
+.cosmetic-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-brand-dusty);
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.cosmetic-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Ultra-smooth transitions */
+.transition-luxury {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Infinite Marquee Scrolling Banner */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+

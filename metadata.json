@@ -1,0 +1,8 @@
+{
+  "name": "ANANTAMAA Luxury Ethnic Wear",
+  "description": "Premium, minimal, and timeless e-commerce platform for ANANTAMAA featuring luxury Pakistani suits, kurti sets, and custom AI stylist assistance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
